@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-1 {
+  background-image: url("../public/images/1.jpg");
+}
+.bg-2 {
+  background-image: url("../public/images/2.jpg");
+}
+
+.image-container {
+  width: 100%; /* Container takes full width of its parent */
+  overflow: hidden; /* Ensures nothing spills outside the container */
+  position: relative; /* For positioning the image absolutely within */
+  min-height: 22rem;
+  max-height: 22rem;
+}
+
+.image-container img {
+  object-fit: cover; /* Covers the area, may be cropped */
+  height: 100%;
+  width: 100%;
+}
